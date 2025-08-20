@@ -1,5 +1,5 @@
 # Main options
-title-text: ""
+title-text: "Dark Souls Grub"
 desktop-image: "background.jpg"
 desktop-color: "#000000"
 terminal-font: "Terminus Regular 14"
