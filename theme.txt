@@ -12,8 +12,8 @@ terminal-border: "0"
 
 + image {
     file = "ds-logo.png"
-    left = 40%
-    top = 10%
+    left = 30%
+    top = 8%
     align = "center"
 }
 # Boot menu (styled like labels)
@@ -29,9 +29,11 @@ terminal-border: "0"
 
     icon_height = 30
     icon_width = 30
+    item_icon_space = 5
     item_height = 40
     item_padding = 5
     item_spacing = 10
+    item_align = center
     selected_item_pixmap_style = "select_*.png"
 }
 
