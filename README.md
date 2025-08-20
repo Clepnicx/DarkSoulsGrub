@@ -2,15 +2,17 @@
 
 ![Showcase](./preview.jpg)
 
-### 🛠️ Installation
+## 🛠️ Installation
 
 ```bash
 git clone https://github.com/Clepnicx/DarkSoulsGrub.git
 sudo ./DarkSoulsGrub/install.sh
 ```
 
-### ❄ NixOS
+## ❄ NixOS
+
 ```nix
+
 # flake.nix
 {
   inputs.ds-grub-theme.url = "github:Clepnicx/DarkSoulsGrub";
@@ -36,4 +38,6 @@ sudo ./DarkSoulsGrub/install.sh
 }
 ```
 
-## O!
+## References
+
+Code reference: https://github.com/gemakfy/MilkGrub
