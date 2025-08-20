@@ -1,16 +1,16 @@
 #!/bin/bash
 
-THEME_NAME="MilkGrub"
+THEME_NAME="DS-Grub"
 THEME_DIR="/boot/grub/themes/$THEME_NAME"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Check if we're in the right directory
 if [ ! -f "$SCRIPT_DIR/theme.txt" ] || [ ! -d "$SCRIPT_DIR/icons" ]; then
-    if [ -d "$SCRIPT_DIR/MilkGrub" ] && [ -f "$SCRIPT_DIR/MilkGrub/theme.txt" ]; then
-        SCRIPT_DIR="$SCRIPT_DIR/MilkGrub"
+    if [ -d "$SCRIPT_DIR/DS-Grub" ] && [ -f "$SCRIPT_DIR/DS-Grub/theme.txt" ]; then
+        SCRIPT_DIR="$SCRIPT_DIR/DS-Grub"
     else
-        echo "Error: Please run this script from inside the MilkGrub theme directory" >&2
-        echo "or place the script in the parent folder of MilkGrub directory" >&2
+        echo "Error: Please run this script from inside the DS-Grub theme directory" >&2
+        echo "or place the script in the parent folder of DS-Grub directory" >&2
         exit 1
     fi
 fi
@@ -43,7 +43,7 @@ cp -r "$SCRIPT_DIR"/* "$THEME_DIR/"
 sed -i '/GRUB_THEME=/d' /etc/default/grub
 sed -i '/GRUB_GFXMODE=/d' /etc/default/grub
 
-echo 'GRUB_THEME="/boot/grub/themes/MilkGrub/theme.txt"' >> /etc/default/grub
+echo 'GRUB_THEME="/boot/grub/themes/DS-Grub/theme.txt"' >> /etc/default/grub
 echo "GRUB_GFXMODE=\"$GFXMODE\"" >> /etc/default/grub
 
 # Update GRUB

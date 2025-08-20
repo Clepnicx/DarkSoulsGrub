@@ -1,23 +1,25 @@
 {
-  description = "Flake to manage MilkGrub theme"; # by gemakfy
+  description = "Flake to manage DS-Grub theme";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs =
+    { self, nixpkgs }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
     in
     with nixpkgs.lib;
     {
-      nixosModule = { config, ... }:
+      nixosModule =
+        { config, ... }:
         let
-          cfg = config.boot.loader.grub.milk-theme;
+          cfg = config.boot.loader.grub.ds-grub-theme;
 
-          milk-grub-theme = pkgs.stdenv.mkDerivation {
-            name = "milk-grub-theme";
+          ds-grub-theme = pkgs.stdenv.mkDerivation {
+            name = "ds-grub-theme";
             src = "${self}";
             installPhase = ''
               mkdir -p $out/icons
@@ -38,7 +40,7 @@
                 default = false;
                 example = true;
                 description = ''
-                  Enable MilkGrub theme
+                  Enable DS-Grub theme
                 '';
               };
             };

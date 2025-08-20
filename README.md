@@ -1,25 +1,25 @@
 # 🥛 Milk Outside A Bag Of Milk Grub Theme
 
-![Showcase](./preview.png)
+![Showcase](./preview.jpg)
 
 ### 🛠️ Installation
 
 ```bash
-git clone https://github.com/gemakfy/MilkGrub
-sudo ./MilkGrub/install.sh
+git clone https://github.com/Clepnicx/DarkSoulsGrub.git
+sudo ./DarkSoulsGrub/install.sh
 ```
 
 ### ❄ NixOS
 ```nix
 # flake.nix
 {
-  inputs.milk-grub-theme.url = "github:gemakfy/MilkGrub";
+  inputs.ds-grub-theme.url = "github:Clepnicx/DarkSoulsGrub";
 
   outputs = { nixpkgs, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
         # ...
-        inputs.milk-grub-theme.nixosModule
+        inputs.ds-grub-theme.nixosModule
       ];
     };
   };
@@ -31,10 +31,9 @@ sudo ./MilkGrub/install.sh
     enable = true;
     gfxmodeEfi = "1920x1080"; # set your resolution
     gfxpayloadEfi = "keep";
-    milk-theme.enable = true;
+    ds-grub-theme.enable = true;
   };
 }
 ```
 
 ## O!
-Code reference: https://github.com/uiriansan/LainGrubTheme
