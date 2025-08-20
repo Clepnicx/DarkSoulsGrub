@@ -1,5 +1,5 @@
 # Main options
-title-text: "Dark Souls Grub"
+title-text: ""
 desktop-image: "background.jpg"
 desktop-color: "#000000"
 terminal-font: "Terminus Regular 14"
@@ -10,6 +10,14 @@ terminal-width: "100%"
 terminal-height: "100%"
 terminal-border: "0"
 
++ image {
+    file = "ds-logo.png"
+    left = 40%
+    top = 10%
+    width = 30%
+    height = 10%
+    align = "center"
+}
 # Boot menu (styled like labels)
 + boot_menu {
     left = 40%-45
