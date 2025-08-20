@@ -34,7 +34,7 @@
         in
         {
           options = {
-            boot.loader.grub.milk-theme = {
+            boot.loader.grub.ds-grub-theme = {
               enable = mkOption {
                 type = types.bool;
                 default = false;
@@ -47,11 +47,11 @@
           };
 
           config = mkIf cfg.enable {
-            environment.systemPackages = [ milk-grub-theme ];
+            environment.systemPackages = [ ds-grub-theme ];
 
             boot.loader.grub = {
-              theme = "${milk-grub-theme}";
-              splashImage = "${milk-grub-theme}/background.jpg";
+              theme = "${ds-grub-theme}";
+              splashImage = "${ds-grub-theme}/background.jpg";
             };
           };
         };
