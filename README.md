@@ -1,4 +1,4 @@
-# Dark Souls Grub Theme
+# WIP Dark Souls Grub Theme
 
 ![Showcase](./preview.jpg)
 
