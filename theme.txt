@@ -14,8 +14,6 @@ terminal-border: "0"
     file = "ds-logo.png"
     left = 40%
     top = 10%
-    width = 30%
-    height = 10%
     align = "center"
 }
 # Boot menu (styled like labels)
@@ -26,15 +24,14 @@ terminal-border: "0"
     height = 40%
     align = "center"
     item_font = "Retro Gaming Regular 22"  # Changed to match title style
-    item_color = "#ff7d00"        # Same red as titles
-    selected_item_color = "#ffffff" # White for selection highlight
+    item_color = "#ff7d00"                 # Same red as titles
+    selected_item_color = "#ffffff"        # White for selection highlight
 
     icon_height = 30
     icon_width = 30
-    item_icon_space = 4
-    item_height = 37
-    item_padding = 0
-    item_spacing = 6
+    item_height = 40
+    item_padding = 5
+    item_spacing = 10
     selected_item_pixmap_style = "select_*.png"
 }
 
@@ -44,7 +41,7 @@ terminal-border: "0"
     top = 50%
     align = "center"
     id = "__timeout__"
-    text = "I have %d Humanity left"  # Uppercase to match style
+    text = "You have %d Humanity"     # Uppercase to match style
     color = "#ff7d00"                 # Same red
-    font = "Retro Gaming Regular 22"           # Same font
+    font = "Retro Gaming Regular 22"  # Same font
 }
