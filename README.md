@@ -1,4 +1,4 @@
-# 🥛 Milk Outside A Bag Of Milk Grub Theme
+# Dark Souls Grub Theme
 
 ![Showcase](./preview.jpg)
 
