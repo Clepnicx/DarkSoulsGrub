@@ -18,7 +18,7 @@ terminal-border: "0"
     height = 40%
     align = "center"
     item_font = "Retro Gaming Regular 22"  # Changed to match title style
-    item_color = "#eb4444"        # Same red as titles
+    item_color = "#ff7d00"        # Same red as titles
     selected_item_color = "#ffffff" # White for selection highlight
 
     icon_height = 30
@@ -37,6 +37,6 @@ terminal-border: "0"
     align = "center"
     id = "__timeout__"
     text = "I have %d Humanity left"  # Uppercase to match style
-    color = "#eb4444"                 # Same red
+    color = "#ff7d00"                 # Same red
     font = "Retro Gaming Regular 22"           # Same font
 }
