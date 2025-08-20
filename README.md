@@ -41,4 +41,5 @@ sudo ./DarkSoulsGrub/install.sh
 ## References
 
 Code reference: <https://github.com/gemakfy/MilkGrub>
+
 Background: <https://www.reddit.com/r/darksouls/comments/ytoyk8/i_made_an_8k_firelink_shrine_wallpaper/>
