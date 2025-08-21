@@ -11,6 +11,8 @@ sudo ./DarkSoulsGrub/install.sh
 
 ## ❄ NixOS
 
+### Flake
+
 ```nix
 
 # flake.nix
@@ -37,6 +39,42 @@ sudo ./DarkSoulsGrub/install.sh
   };
 }
 ```
+
+### Package
+
+```nix
+
+# configuration.nix
+{ config, lib,  pkgs, ... }:
+
+let
+  ds-grub-theme = pkgs.fetchFromGitHub
+  {
+    owner = "Clepnicx";
+    repo = "DarkSoulsGrub";
+    rev = "35adfbf17757f2ddf8218321b6f38d9aa7de9292";
+    sha256 = "sha256-RNN/1kNRgUxCIChOSCj/yypa/ZjH+t/O8qXp1II9oL4=";
+  };
+in
+
+{
+boot.loader.grub = {
+  enable = true;
+  gfxmodeEfi = "1920x1080"; # set your resolution
+  gfxpayloadEfi = "keep";
+  theme = ds-grub-theme;
+}
+```
+
+Note: the rev and thus sha256 are hard coded for a specific version. In order to
+use the latest version (rn, the hardcoded is the latest one), use
+```nix-prefetch-git``` to know about it.
+
+```shell
+nix-shell -p nix-prefetch-git --command "nix-prefetch-git https://github.com/Clepnicx/DarkSoulsGrub.git"
+```
+
+Then fill up the required data.
 
 ## References
 
