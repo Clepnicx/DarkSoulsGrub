@@ -28,11 +28,11 @@ terminal-border: "0"
     selected_item_color = "#ffffff"        # White for selection highlight
 
     selected_item_pixmap_style = "select_*.png"
-    icon_height = 20
+    icon_height = 30
     icon_width = 30
     item_icon_space = 5
 
-    item_height = 50
+    item_height = 40
     item_padding = 5
     item_spacing = 10
     item_align = center
