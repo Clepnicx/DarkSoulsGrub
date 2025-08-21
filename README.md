@@ -21,7 +21,7 @@ sudo ./DarkSoulsGrub/install.sh
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
         # ...
-        inputs.ds-grub-theme.nixosModule
+        inputs.ds-grub-theme.nixosModules.default
       ];
     };
   };

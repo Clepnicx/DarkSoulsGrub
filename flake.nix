@@ -13,7 +13,7 @@
     in
     with nixpkgs.lib;
     {
-      nixosModule =
+      nixosModules.default =
         { config, ... }:
         let
           cfg = config.boot.loader.grub.ds-grub-theme;
