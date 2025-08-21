@@ -13,7 +13,7 @@ terminal-border: "0"
 + image {
     file = "ds-logo.png"
     left = 30%
-    top = 8%
+    top = 5%
     align = "center"
 }
 # Boot menu (styled like labels)
@@ -27,14 +27,15 @@ terminal-border: "0"
     item_color = "#ff7d00"                 # Same red as titles
     selected_item_color = "#ffffff"        # White for selection highlight
 
+    selected_item_pixmap_style = "select_*.png"
     icon_height = 30
-    icon_width = 30
-    item_icon_space = 5
+    icon_width = 20
+    item_icon_space = 10
+
     item_height = 40
     item_padding = 5
     item_spacing = 10
     item_align = center
-    selected_item_pixmap_style = "select_*.png"
 }
 
 # Countdown (styled like titles)
